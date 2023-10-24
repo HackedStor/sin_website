@@ -27,16 +27,76 @@ body {
 .hero img {
     width: 40%;
 }
-.hero .btn-primary  {
+.btn-primary  {
     background-color: lightblue !important;
-    border: none;
-    color: #282d32;
+    border: none !important;
+    color: #282d32 !important;
 }
 @media (max-width:1000px) {
     .hero img {
         display: none !important;
     }
 }
+
+.img_card {
+    display: flex;
+    justify-content: center;
+}
+.img_card img {
+    width: 80% !important;
+}
+.card-body .card-price {
+    font-size: 18px;
+    font-weight: 600;
+}
+.Btn {
+    border: none;
+    border-radius: 3px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .4s;
+    cursor: pointer;
+    position: relative;
+    background-color: rgb(31, 31, 31);
+    overflow: hidden;
+  }
+  
+  .svgIcon {
+    transition-duration: .3s;
+  }
+  
+  .svgIcon path {
+    fill: white;
+  }
+  
+  .text {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    width: 120px;
+    font-weight: 600;
+    opacity: 0;
+    transition-duration: .4s;
+  }
+  
+  .Btn:hover {
+    width: 110px;
+    transition-duration: .4s;
+    border-radius: 3px;
+  }
+  
+  .Btn:hover .text {
+    opacity: 1;
+    transition-duration: .4s;
+  }
+  
+  .Btn:hover .svgIcon {
+    opacity: 0;
+    transition-duration: .3s;
+  }
+
 .footer-dark {
     padding:50px 0;
     color:#f0f9ff;
