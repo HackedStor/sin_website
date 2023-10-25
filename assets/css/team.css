@@ -41,11 +41,14 @@ p,a,h1,h2,h3,h4 {
 .section-team .single-person .person-image {
     position: relative;
     margin-bottom: 50px;
-    border-radius: 50%;
+    border-radius: 5px;
     border: 4px dashed transparent;
     transition: padding .3s;
-}
 
+}
+.section-team .single-person .person-image img {
+    border-radius: 5px !important;
+}
 .section-team .single-person:hover .person-image {
 	padding: 12px;
     border: 4px dashed #fff;
